@@ -1,4 +1,5 @@
-module.exports = {
-    runtimeCompiler: true,
-    publicPath: './'
-}
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: true,
+  lintOnSave: false
+})
